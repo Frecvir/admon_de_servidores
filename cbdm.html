@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<title>PROYECTO PARCIAL 3</title>
+</head>
+		<link rel="stylesheet" href="estilo.css">
+<body>
+<div class="contenedor"> 
+  <header>  
+		<a href="index.html"><img id="logo" src="isot.png"></a>
+		<a href="https://www.uneve.edu.mx/"><img id="sub1" src="cm_logo.png"> </a>
+		<a href="#inicio"> <img class="sub" src="sub.gif"> </a>
+	<nav> 
+		
+<div ><a class="menu" href="index.html"> INICIO </a></div>
+<div ><a class="menu" href="conocenos.html"> CONOCENOS </a></div>
+		
+<div class="dropdown"> 
+    <button class="dropdown">MENÚ</button>
+    <div class="dropdown-content">
+		
+		<div class="submenu">
+            <a href="ldru.html">LOCALIZADOR DE RECURSOS UNIFORME</a>
+			<div class="submenu-content">
+				<a href="ldru.html #de1"  >- Definición.</a>
+            	<a href="ldru.html #es1"  >- Estructura.</a>
+				<a href="ldru.html #ej1"  >- Ejemplo.</a>
+            </div>
+        </div>
+        
+        <div class="submenu">
+            <a href="cbdm.html">CONFIGURACIÓN DE BD MYSQL EN EL SERVIDOR WEB</a>
+            <div class="submenu-content">
+				<a href="cbdm.html #de2"  >- Definición.</a>
+				<a href="cbdm.html #es2"  >- Pasos para configurar.</a>
+				<a href="cbdm.html #ej2"  >- Ejemplo.</a>
+            </div>
+        </div>
+		
+		<div class="submenu">
+            <a href="cbdw.html">CONEXIÓN DE BD EN LA WEB</a>
+			<div class="submenu-content">
+				<a href="cbdw.html #de3"  >- Definición.</a>
+				<a href="cbdw.html #es3"  >- Pasos </a>
+				<a href="cbdw.html #ej3"  >- Ejemplo </a>
+        </div>
+    </div>
+	</div>
+	 </div>
+		
+	</nav>
+	  </header>
+	
+	<section> 
+		<p id="inicio"></p>
+      <img class="imggd" src="cbdm.png"> 
+
+        <h2 class="stit" >CONFIGURACIÓN DE UNA BASE DE DATOS MYSQL EN UN SERVIDOR WEB</h2>
+			
+			<div class="txt1" id="#de2"> La configuración de una base de datos MySQL en un servidor web implica instalar, inicializar y optimizar el entorno necesario para gestionar bases de datos relacionales que permitan almacenar y recuperar información de manera eficiente para aplicaciones web. MySQL es uno de los sistemas de gestión de bases de datos (DBMS) más utilizados en el desarrollo web debido a su velocidad, fiabilidad y compatibilidad con múltiples plataformas.
+			</div>
+			<br>
+			<audio src="cbdw.mp3" play loop controls> </audio>
+			<br>
+            <div class="stit" id="#es2">PASOS PARA CONFIGURAR </div>
+			
+		     <ol class="txt1">
+        <li><strong>Instalar MySQL en el Servidor</strong>
+            <ul>
+                <li>En sistemas Linux (Ubuntu):</li>
+                <pre><code>sudo apt update
+sudo apt install mysql-server</code></pre>
+                <li>En sistemas Windows: Descarga el instalador desde el sitio oficial de MySQL.</li>
+                <li>Inicia el servicio MySQL:</li>
+                <pre><code>sudo service mysql start</code></pre>
+            </ul>
+        </li>
+        <li><strong>Configurar la Base de Datos</strong>
+            <ul>
+                <li>Inicia la consola MySQL:</li>
+                <pre><code>sudo mysql</code></pre>
+                <li>Cambia la contraseña del usuario root:</li>
+                <pre><code>ALTER USER 'root'@'localhost' IDENTIFIED WITH 
+				<br>mysql_native_password BY 'contraseña_segura';
+FLUSH PRIVILEGES;</code></pre>
+                <li>Crea una nueva base de datos:</li>
+                <pre><code>CREATE DATABASE mi_base_datos;</code></pre>
+            </ul>
+        </li>
+        <li><strong>Configurar el Acceso Remoto</strong>
+            <ul>
+                <li>Edita el archivo de configuración:</li>
+                <pre><code>sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf</code></pre>
+                <li>Comenta la línea:</li>
+                <pre><code>#bind-address = 127.0.0.1</code></pre>
+                <li>Reinicia MySQL para aplicar los cambios:</li>
+                <pre><code>sudo service mysql restart</code></pre>
+            </ul>
+        </li>
+        <li><strong>Crear un Usuario y Otorgar Permisos</strong>
+            <ul>
+                <li>Crear un usuario con acceso remoto:</li>
+                <pre><code>CREATE USER 'usuario'@'%' IDENTIFIED BY 'contraseña';
+GRANT ALL PRIVILEGES ON mi_base_datos.* TO 'usuario'@'%';
+FLUSH PRIVILEGES;</code></pre>
+            </ul>
+        </li>
+    </ol>
+		<img id="#ej2" src="code.png" alt="code" width="820px" height="200px"> 
+		<iframe id="#ej" width="560" height="315" src="https://www.youtube.com/embed/b8eyqerDmks?si=yla4mqVjBxXyjeFf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</section>
+		<aside>
+	<img class="rss" src="fa.png" target="_blank">
+		<a class="rs" href="https://www.facebook.com/UNEVEoficial" target="_blank">FACEBOOK</a>
+	<img class="rss" src="in.png" target="_blank">
+		<a class="rs" href="https://www.instagram.com/uneve.oficial/" target="_blank">INSTAGRAM</a>
+	<img class="rss" src="ws.png" target="_blank">
+		<a class="rs" href="https://api.whatsapp.com/message/NRMCOK2KGSGQJ1?autoload=1&app_absent=0"  target="_blank">WHATSAPP</a>
+	</aside>
+	
+  <footer>
+		<p class="dere"> Creado por Bryan López García <br> Todos los derechos reservados ® 2024</p>
+	</footer>
+</div>
+</body>
+</html>
+

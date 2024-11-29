@@ -1,0 +1,344 @@
+@charset "utf-8";
+/* CSS Document */
+/*submenu*/
+/* Estilos para el submenú */
+.submenu {
+    position: relative;
+}
+
+#cpi{
+ float: left;
+}
+
+#cpd{
+ float: right;
+}
+
+.cpi{
+ float: left;
+}
+
+.cpd{
+ float: right;
+}
+
+.submenu-content {
+	border-radius: 30px;
+	background-color: #2962a9;
+	color: #ffffff;
+    display: none;
+    position: absolute;
+    left: 160px; /* Ajusta según sea necesario */
+    top: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.submenu-content a {
+	border-radius: 30px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu-content a:hover {
+	border-radius: 30px;
+    background-color: #db5728;
+	color: #ffffff;
+}
+
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+/* Estilos básicos para el menú desplegable */
+.dropdown {
+	font-size: 15px;
+	width: 300px;
+	background-color: #2962a9;
+	color: #FFFFFF;
+	float:left;
+	border-radius: 10px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 1px;
+    display: inline-block;	
+}
+
+
+.dropdown-content {
+	border-radius: 30px;
+	text-align: left;
+    display: none;
+    position: absolute;
+    background-color: #099848;
+	color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+	border-radius: 30px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	border-radius: 30px;
+    background-color: #db5728;
+	color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+	
+}
+
+#slog{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: aliceblue;
+	background-color: crimson;
+	border-radius: 50px;
+}
+body{
+background-color:#edebea;
+margin: 0px;
+padding: 0px;
+}
+
+
+.contenedor {
+background-image: url("fondo.png");
+width: 1000px;
+padding: 30px;
+margin: auto;
+text-align: center;
+color: aliceblue;
+font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+font-size: 25px;}
+
+header {
+background-color: #edebea;
+border-radius: 100px;
+position: fixed;
+top:0;
+width: 1000px;
+height: 100px;
+z-index: 100;} /*ordena en capas las cajas, con -10 la caja se va hasta atras*/
+
+#logo{
+	width:80px;
+	height:80px;
+	float:left;
+	margin-top:10px;
+	margin-left: 20px;
+	border-radius:100px;}
+
+#sub1{
+	width: 80px;
+	height: 80px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 50px;
+}
+
+.code{
+	background-color: black;
+	color:white;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 18px;
+	text-align: left;
+	border
+}
+
+.sub{
+	width:40px;
+	height:40px;
+	float:right;
+	margin-right: -60px;
+	margin-top:90px;
+	border-radius:100px;}
+
+.menu{
+	text-decoration: none;
+    color: inherit;
+	background-color: #2962a9;
+	color: #ffffff;
+	width:200px;
+	margin: 10px;
+	height: 30PX;
+	float:left;
+	margin-top: 30px; 
+	border-radius: 30px;
+}
+
+.menu:hover{
+	background-color: #099848;
+	color: #ffffff;
+}
+
+nav ul { /*se pueden mandar a llamar ambas etiquetas ya que una esta dentro de otra*/
+list-style-type:none}
+
+nav ul li {
+display: inline; /*Para que las opciones salgan horizontal y no en lista*/
+position: relative;
+}
+
+nav ul li a{
+text-decoration: none; /*quita la linea azul que se ve como hipervinculo*/
+color:azure;
+font-weight:bold; /*Negrita*/
+}
+
+nav ul li a:hover{
+text-decoration: none; /*quita la linea azul que se ve como hipervinculo*/
+color:#91BAD7;
+font-weight:bold;
+}
+
+section{
+	margin-top: 70px;
+}
+
+th, td {
+	height: 30px;
+    border: 1px solid #000; /* Borde negro visible */
+    padding: 10px;
+    text-align: center;
+	text-decoration: none; /*quita la linea azul que se ve como hipervinculo*/
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td {
+    height: 100px;
+	text-decoration: none; /*quita la linea azul que se ve como hipervinculo*/
+}
+
+th[colspan="7"] {
+    background-color: #d9d9d9;
+    font-size: 1.2em;
+}
+
+
+
+section{
+background-color: #edebea;
+padding: 20px;
+margin: 70px;
+height: 2800px;
+}
+
+aside{
+background-color: #edebea;
+background-image: url("UNEVE.png");
+width: 1000px;
+height: 100px;
+float: none;
+}
+
+.rss{
+	float: left;
+	margin: 100px;
+	margin-top: 10px;
+	width: 80px;
+	height: 80px;
+}
+
+.rs{
+	float: left;
+	margin-left: -100px;
+	margin-top: 30PX;
+	width: 150px;
+	text-decoration: none; 
+	background-color:#db5728;
+	color:white;
+	border-radius: 20px;
+}
+
+.rs:hover{
+	background-color:#099848;}
+
+footer{
+background-color: #edebea;
+background-image: url("UNEVE.png");
+width: 1000px;
+height: 50px;
+float: none;
+}
+
+.dere{
+	width: 1000px;
+	margin-top: -50px;
+	align-content: center;
+	color: black;
+}
+
+.imggd{
+	width:800px;
+	height: 400px;
+	margin-top: 10px;
+}
+
+#mapa{
+	width: 500px;
+	height: 318px;
+	float: right;
+}
+
+#video{
+	width: 500px;
+	height: 318px;
+	margin-top: 50px;
+	
+}
+
+.txt{
+	float: left;
+	width: 300px;
+	background-color: #e38c6d;
+	color: white;
+	text-align: left;
+}
+
+.txt1{
+	background-color: #e38c6d;
+	color: white;
+	text-align: left;
+}
+.tit{
+	background-color: #099848;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.stit{
+	background-color: #2962a9;
+	width: 500px;
+	font-size: 25px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sstit{
+	background-color: #60655c;
+	width: 500px;
+	font-size: 25px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
